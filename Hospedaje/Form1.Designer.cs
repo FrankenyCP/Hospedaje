@@ -1,0 +1,349 @@
+﻿namespace Hospedaje
+{
+    partial class frmcotizador
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblhuesped = new Label();
+            lblnoches = new Label();
+            lbltarifanoche = new Label();
+            txthuesped = new TextBox();
+            txttarifanoche = new TextBox();
+            checkBox1 = new CheckBox();
+            btncalcular = new Button();
+            btnlimpiar = new Button();
+            lblcotizacion = new Label();
+            lblsubtotal = new Label();
+            lbldescuento = new Label();
+            lblitbis = new Label();
+            lblservicios = new Label();
+            lbltotal = new Label();
+            lblresultadocotizacion = new Label();
+            lblresultadosubtotal = new Label();
+            lblresultadodescuento = new Label();
+            lblresultadoitbis = new Label();
+            lblresultadoservicio = new Label();
+            lblresultadototal = new Label();
+            btncopiar = new Button();
+            nudNoches = new NumericUpDown();
+            btnimperactivo = new Button();
+            lstresultados = new ListBox();
+            ((System.ComponentModel.ISupportInitialize)nudNoches).BeginInit();
+            SuspendLayout();
+            // 
+            // lblhuesped
+            // 
+            lblhuesped.AutoSize = true;
+            lblhuesped.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblhuesped.Location = new Point(61, 34);
+            lblhuesped.Name = "lblhuesped";
+            lblhuesped.Size = new Size(99, 28);
+            lblhuesped.TabIndex = 0;
+            lblhuesped.Text = "Huesped:";
+            // 
+            // lblnoches
+            // 
+            lblnoches.AutoSize = true;
+            lblnoches.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblnoches.Location = new Point(61, 93);
+            lblnoches.Name = "lblnoches";
+            lblnoches.Size = new Size(87, 28);
+            lblnoches.TabIndex = 1;
+            lblnoches.Text = "Noches:";
+            // 
+            // lbltarifanoche
+            // 
+            lbltarifanoche.AutoSize = true;
+            lbltarifanoche.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbltarifanoche.Location = new Point(29, 150);
+            lbltarifanoche.Name = "lbltarifanoche";
+            lbltarifanoche.Size = new Size(213, 28);
+            lbltarifanoche.TabIndex = 2;
+            lbltarifanoche.Text = "Tarifa / Noche (USD):";
+            // 
+            // txthuesped
+            // 
+            txthuesped.Location = new Point(298, 34);
+            txthuesped.Name = "txthuesped";
+            txthuesped.Size = new Size(213, 27);
+            txthuesped.TabIndex = 3;
+            // 
+            // txttarifanoche
+            // 
+            txttarifanoche.Location = new Point(298, 150);
+            txttarifanoche.Name = "txttarifanoche";
+            txttarifanoche.Size = new Size(213, 27);
+            txttarifanoche.TabIndex = 5;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            checkBox1.Location = new Point(143, 225);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(259, 32);
+            checkBox1.TabIndex = 7;
+            checkBox1.Text = "Temporada Alta (+25%)";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // btncalcular
+            // 
+            btncalcular.Location = new Point(103, 297);
+            btncalcular.Name = "btncalcular";
+            btncalcular.Size = new Size(139, 43);
+            btncalcular.TabIndex = 8;
+            btncalcular.Text = "Calcular";
+            btncalcular.UseVisualStyleBackColor = true;
+            // 
+            // btnlimpiar
+            // 
+            btnlimpiar.Location = new Point(298, 297);
+            btnlimpiar.Name = "btnlimpiar";
+            btnlimpiar.Size = new Size(120, 43);
+            btnlimpiar.TabIndex = 9;
+            btnlimpiar.Text = "Limpiar";
+            btnlimpiar.UseVisualStyleBackColor = true;
+            btnlimpiar.Click += btnlimpiar_Click;
+            // 
+            // lblcotizacion
+            // 
+            lblcotizacion.AutoSize = true;
+            lblcotizacion.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblcotizacion.Location = new Point(45, 411);
+            lblcotizacion.Name = "lblcotizacion";
+            lblcotizacion.Size = new Size(93, 23);
+            lblcotizacion.TabIndex = 10;
+            lblcotizacion.Text = "Cotizacion";
+            // 
+            // lblsubtotal
+            // 
+            lblsubtotal.AutoSize = true;
+            lblsubtotal.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblsubtotal.Location = new Point(45, 473);
+            lblsubtotal.Name = "lblsubtotal";
+            lblsubtotal.Size = new Size(79, 23);
+            lblsubtotal.TabIndex = 11;
+            lblsubtotal.Text = "Subtotal";
+            // 
+            // lbldescuento
+            // 
+            lbldescuento.AutoSize = true;
+            lbldescuento.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbldescuento.Location = new Point(45, 535);
+            lbldescuento.Name = "lbldescuento";
+            lbldescuento.Size = new Size(93, 23);
+            lbldescuento.TabIndex = 12;
+            lbldescuento.Text = "Descuento";
+            // 
+            // lblitbis
+            // 
+            lblitbis.AutoSize = true;
+            lblitbis.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblitbis.Location = new Point(45, 595);
+            lblitbis.Name = "lblitbis";
+            lblitbis.Size = new Size(91, 23);
+            lblitbis.TabIndex = 13;
+            lblitbis.Text = "ITBIS 18%";
+            // 
+            // lblservicios
+            // 
+            lblservicios.AutoSize = true;
+            lblservicios.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblservicios.Location = new Point(45, 654);
+            lblservicios.Name = "lblservicios";
+            lblservicios.Size = new Size(114, 23);
+            lblservicios.TabIndex = 14;
+            lblservicios.Text = "Servicio 10%";
+            // 
+            // lbltotal
+            // 
+            lbltotal.AutoSize = true;
+            lbltotal.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbltotal.Location = new Point(45, 707);
+            lbltotal.Name = "lbltotal";
+            lbltotal.Size = new Size(134, 31);
+            lbltotal.TabIndex = 15;
+            lbltotal.Text = "TOTAL USD";
+            // 
+            // lblresultadocotizacion
+            // 
+            lblresultadocotizacion.AutoSize = true;
+            lblresultadocotizacion.Location = new Point(347, 411);
+            lblresultadocotizacion.Name = "lblresultadocotizacion";
+            lblresultadocotizacion.Size = new Size(36, 20);
+            lblresultadocotizacion.TabIndex = 16;
+            lblresultadocotizacion.Text = "0.00";
+            // 
+            // lblresultadosubtotal
+            // 
+            lblresultadosubtotal.AutoSize = true;
+            lblresultadosubtotal.Location = new Point(347, 463);
+            lblresultadosubtotal.Name = "lblresultadosubtotal";
+            lblresultadosubtotal.Size = new Size(36, 20);
+            lblresultadosubtotal.TabIndex = 17;
+            lblresultadosubtotal.Text = "0.00";
+            // 
+            // lblresultadodescuento
+            // 
+            lblresultadodescuento.AutoSize = true;
+            lblresultadodescuento.Location = new Point(347, 535);
+            lblresultadodescuento.Name = "lblresultadodescuento";
+            lblresultadodescuento.Size = new Size(36, 20);
+            lblresultadodescuento.TabIndex = 18;
+            lblresultadodescuento.Text = "0.00";
+            // 
+            // lblresultadoitbis
+            // 
+            lblresultadoitbis.AutoSize = true;
+            lblresultadoitbis.Location = new Point(347, 597);
+            lblresultadoitbis.Name = "lblresultadoitbis";
+            lblresultadoitbis.Size = new Size(36, 20);
+            lblresultadoitbis.TabIndex = 19;
+            lblresultadoitbis.Text = "0.00";
+            // 
+            // lblresultadoservicio
+            // 
+            lblresultadoservicio.AutoSize = true;
+            lblresultadoservicio.Location = new Point(347, 654);
+            lblresultadoservicio.Name = "lblresultadoservicio";
+            lblresultadoservicio.Size = new Size(36, 20);
+            lblresultadoservicio.TabIndex = 20;
+            lblresultadoservicio.Text = "0.00";
+            // 
+            // lblresultadototal
+            // 
+            lblresultadototal.AutoSize = true;
+            lblresultadototal.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblresultadototal.ImageAlign = ContentAlignment.MiddleLeft;
+            lblresultadototal.Location = new Point(347, 707);
+            lblresultadototal.Name = "lblresultadototal";
+            lblresultadototal.Size = new Size(40, 20);
+            lblresultadototal.TabIndex = 21;
+            lblresultadototal.Text = "0.00";
+            // 
+            // btncopiar
+            // 
+            btncopiar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btncopiar.Location = new Point(103, 767);
+            btncopiar.Name = "btncopiar";
+            btncopiar.Size = new Size(253, 55);
+            btncopiar.TabIndex = 22;
+            btncopiar.Text = "Copiar para Whatsapp";
+            btncopiar.UseVisualStyleBackColor = true;
+            // 
+            // nudNoches
+            // 
+            nudNoches.Location = new Point(345, 94);
+            nudNoches.Maximum = new decimal(new int[] { 60, 0, 0, 0 });
+            nudNoches.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nudNoches.Name = "nudNoches";
+            nudNoches.Size = new Size(150, 27);
+            nudNoches.TabIndex = 23;
+            nudNoches.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // btnimperactivo
+            // 
+            btnimperactivo.Location = new Point(198, 526);
+            btnimperactivo.Name = "btnimperactivo";
+            btnimperactivo.Size = new Size(113, 37);
+            btnimperactivo.TabIndex = 24;
+            btnimperactivo.Text = "Imperactivo";
+            btnimperactivo.UseVisualStyleBackColor = true;
+            btnimperactivo.Click += btnimperactivo_Click;
+            // 
+            // lstresultados
+            // 
+            lstresultados.FormattingEnabled = true;
+            lstresultados.Location = new Point(526, 138);
+            lstresultados.Name = "lstresultados";
+            lstresultados.Size = new Size(297, 664);
+            lstresultados.TabIndex = 25;
+            // 
+            // frmcotizador
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(848, 834);
+            Controls.Add(lstresultados);
+            Controls.Add(btnimperactivo);
+            Controls.Add(nudNoches);
+            Controls.Add(btncopiar);
+            Controls.Add(lblresultadototal);
+            Controls.Add(lblresultadoservicio);
+            Controls.Add(lblresultadoitbis);
+            Controls.Add(lblresultadodescuento);
+            Controls.Add(lblresultadosubtotal);
+            Controls.Add(lblresultadocotizacion);
+            Controls.Add(lbltotal);
+            Controls.Add(lblservicios);
+            Controls.Add(lblitbis);
+            Controls.Add(lbldescuento);
+            Controls.Add(lblsubtotal);
+            Controls.Add(lblcotizacion);
+            Controls.Add(btnlimpiar);
+            Controls.Add(btncalcular);
+            Controls.Add(checkBox1);
+            Controls.Add(txttarifanoche);
+            Controls.Add(txthuesped);
+            Controls.Add(lbltarifanoche);
+            Controls.Add(lblnoches);
+            Controls.Add(lblhuesped);
+            Name = "frmcotizador";
+            Text = "Cotizador Villa Coral";
+            ((System.ComponentModel.ISupportInitialize)nudNoches).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private Label lblhuesped;
+        private Label lblnoches;
+        private Label lbltarifanoche;
+        private TextBox txthuesped;
+        private TextBox txttarifanoche;
+        private CheckBox checkBox1;
+        private Button btncalcular;
+        private Button btnlimpiar;
+        private Label lblcotizacion;
+        private Label lblsubtotal;
+        private Label lbldescuento;
+        private Label lblitbis;
+        private Label lblservicios;
+        private Label lbltotal;
+        private Label lblresultadocotizacion;
+        private Label lblresultadosubtotal;
+        private Label lblresultadodescuento;
+        private Label lblresultadoitbis;
+        private Label lblresultadoservicio;
+        private Label lblresultadototal;
+        private Button btncopiar;
+        private NumericUpDown nudNoches;
+        private Button btnimperactivo;
+        private ListBox lstresultados;
+    }
+}
