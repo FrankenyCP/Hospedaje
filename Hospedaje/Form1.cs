@@ -66,7 +66,8 @@ namespace Hospedaje
 
         private void btncopiar_Click(object sender, EventArgs e)
         {
-            // 1. Construir el texto con el desglose completo de la cotización
+            //Copiar a Whatsapp
+
             string mensajeWhatsapp = $"*Cotización Villa Coral*\n" +
                                      $"Huésped: {txthuesped.Text}\n" +
                                      $"Noches: {nudNoches.Value}\n" +
@@ -76,10 +77,8 @@ namespace Hospedaje
                                      $"Servicio (10%): {lblresultadoservicio.Text}\n" +
                                      $"*TOTAL USD: {lblresultadototal.Text}*";
 
-            // 2. Copiar todo el contenido al portapapeles
+            
             Clipboard.SetText(mensajeWhatsapp);
-
-            // 3. Mostrar el aviso en pantalla
             MessageBox.Show("cotizacion copiada al portapapeles",
                             "Copiado",
                             MessageBoxButtons.OK,
@@ -89,6 +88,15 @@ namespace Hospedaje
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
             lstresultados.Items.Clear();
+            nudNoches.Value = 1;              
+            checkBox1.Checked = false;
+
+            lblresultadocotizacion.Text = "0.00";
+            lblresultadosubtotal.Text = "0.00";
+            lblresultadodescuento.Text = "0.00";
+            lblresultadoitbis.Text = "0.00";
+            lblresultadoservicio.Text = "0.00";
+            lblresultadototal.Text = "0.00";
         }
 
         private void btncalcular_Click(object sender, EventArgs e)
