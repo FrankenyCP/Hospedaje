@@ -120,6 +120,7 @@
             btncalcular.TabIndex = 8;
             btncalcular.Text = "Calcular";
             btncalcular.UseVisualStyleBackColor = true;
+            btncalcular.Click += btncalcular_Click;
             // 
             // btnlimpiar
             // 
@@ -276,7 +277,7 @@
             btnimperativo.TabIndex = 24;
             btnimperativo.Text = "Imperativo";
             btnimperativo.UseVisualStyleBackColor = true;
-            btnimperativo.Click += btnimperactivo_Click;
+            btnimperativo.Click += btnimperativo_Click;
             // 
             // lstresultados
             // 

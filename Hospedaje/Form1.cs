@@ -7,8 +7,8 @@ namespace Hospedaje
             InitializeComponent();
         }
 
-        // 1. IMPERATIVO (Tu lógica original con los operadores corrigiendo la sintaxis)
-        private void btnimperactivo_Click(object sender, EventArgs e)
+
+        private void btnimperativo_Click(object sender, EventArgs e)
         {
             string Huesped = txthuesped.Text;
             int noches = (int)nudNoches.Value;
@@ -33,10 +33,7 @@ namespace Hospedaje
 
 
 
-        private void btnlimpiar_Click(object sender, EventArgs e)
-        {
-            lstresultados.Items.Clear();
-        }
+
 
         private void btnObjetos_Click_1(object sender, EventArgs e)
         {
@@ -88,9 +85,50 @@ namespace Hospedaje
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
         }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            lstresultados.Items.Clear();
+        }
+
+        private void btncalcular_Click(object sender, EventArgs e)
+        {
+            string Huesped = txthuesped.Text;
+            int noches = (int)nudNoches.Value;
+            decimal tarifa = Convert.ToDecimal(txttarifanoche.Text);
+
+            
+            if (checkBox1.Checked)
+            {
+                tarifa *= 1.25m;
+            }
+
+            decimal subtotal = noches * tarifa;
+            decimal descuento = 0m;
+            if (noches >= 7)
+            {
+                descuento = subtotal * 0.10m;
+            }
+
+            decimal baseImponible = subtotal - descuento;
+            decimal itbis = baseImponible * 0.18m;
+            decimal servicio = baseImponible * 0.10m;
+            decimal total = baseImponible + itbis + servicio;
+
+            
+            lblresultadocotizacion.Text = total.ToString("N2");
+            lblresultadosubtotal.Text = subtotal.ToString("N2");
+            lblresultadodescuento.Text = descuento.ToString("N2");
+            lblresultadoitbis.Text = itbis.ToString("N2");
+            lblresultadoservicio.Text = servicio.ToString("N2");
+            lblresultadototal.Text = total.ToString("N2");
+
+            
+            lstresultados.Items.Add($"[Cotización] {Huesped} : US$ {total:N2}");
+        }
     }
 
-    // Clase auxiliar para la versión en Objetos
+    
     public class Reserva
     {
         public string Huesped { get; set; }
