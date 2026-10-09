@@ -61,7 +61,7 @@
             // 
             lblhuesped.AutoSize = true;
             lblhuesped.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblhuesped.Location = new Point(61, 34);
+            lblhuesped.Location = new Point(12, 18);
             lblhuesped.Name = "lblhuesped";
             lblhuesped.Size = new Size(99, 28);
             lblhuesped.TabIndex = 0;
@@ -71,7 +71,7 @@
             // 
             lblnoches.AutoSize = true;
             lblnoches.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblnoches.Location = new Point(61, 93);
+            lblnoches.Location = new Point(12, 78);
             lblnoches.Name = "lblnoches";
             lblnoches.Size = new Size(87, 28);
             lblnoches.TabIndex = 1;
@@ -81,7 +81,7 @@
             // 
             lbltarifanoche.AutoSize = true;
             lbltarifanoche.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbltarifanoche.Location = new Point(29, 150);
+            lbltarifanoche.Location = new Point(12, 138);
             lbltarifanoche.Name = "lbltarifanoche";
             lbltarifanoche.Size = new Size(213, 28);
             lbltarifanoche.TabIndex = 2;
@@ -89,23 +89,23 @@
             // 
             // txthuesped
             // 
-            txthuesped.Location = new Point(298, 34);
+            txthuesped.Location = new Point(117, 22);
             txthuesped.Name = "txthuesped";
             txthuesped.Size = new Size(213, 27);
             txthuesped.TabIndex = 3;
             // 
             // txttarifanoche
             // 
-            txttarifanoche.Location = new Point(298, 150);
+            txttarifanoche.Location = new Point(245, 138);
             txttarifanoche.Name = "txttarifanoche";
-            txttarifanoche.Size = new Size(213, 27);
+            txttarifanoche.Size = new Size(195, 27);
             txttarifanoche.TabIndex = 5;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBox1.Location = new Point(143, 225);
+            checkBox1.Location = new Point(85, 208);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(259, 32);
             checkBox1.TabIndex = 7;
@@ -114,9 +114,9 @@
             // 
             // btncalcular
             // 
-            btncalcular.Location = new Point(103, 297);
+            btncalcular.Location = new Point(40, 269);
             btncalcular.Name = "btncalcular";
-            btncalcular.Size = new Size(139, 43);
+            btncalcular.Size = new Size(154, 57);
             btncalcular.TabIndex = 8;
             btncalcular.Text = "Calcular";
             btncalcular.UseVisualStyleBackColor = true;
@@ -124,9 +124,9 @@
             // 
             // btnlimpiar
             // 
-            btnlimpiar.Location = new Point(298, 297);
+            btnlimpiar.Location = new Point(245, 269);
             btnlimpiar.Name = "btnlimpiar";
-            btnlimpiar.Size = new Size(120, 43);
+            btnlimpiar.Size = new Size(147, 57);
             btnlimpiar.TabIndex = 9;
             btnlimpiar.Text = "Limpiar";
             btnlimpiar.UseVisualStyleBackColor = true;
@@ -136,7 +136,7 @@
             // 
             lblcotizacion.AutoSize = true;
             lblcotizacion.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblcotizacion.Location = new Point(45, 411);
+            lblcotizacion.Location = new Point(46, 681);
             lblcotizacion.Name = "lblcotizacion";
             lblcotizacion.Size = new Size(93, 23);
             lblcotizacion.TabIndex = 10;
@@ -146,7 +146,7 @@
             // 
             lblsubtotal.AutoSize = true;
             lblsubtotal.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblsubtotal.Location = new Point(45, 473);
+            lblsubtotal.Location = new Point(60, 482);
             lblsubtotal.Name = "lblsubtotal";
             lblsubtotal.Size = new Size(79, 23);
             lblsubtotal.TabIndex = 11;
@@ -156,7 +156,7 @@
             // 
             lbldescuento.AutoSize = true;
             lbldescuento.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbldescuento.Location = new Point(45, 535);
+            lbldescuento.Location = new Point(48, 534);
             lbldescuento.Name = "lbldescuento";
             lbldescuento.Size = new Size(93, 23);
             lbldescuento.TabIndex = 12;
@@ -166,7 +166,7 @@
             // 
             lblitbis.AutoSize = true;
             lblitbis.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblitbis.Location = new Point(45, 595);
+            lblitbis.Location = new Point(48, 584);
             lblitbis.Name = "lblitbis";
             lblitbis.Size = new Size(91, 23);
             lblitbis.TabIndex = 13;
@@ -176,7 +176,7 @@
             // 
             lblservicios.AutoSize = true;
             lblservicios.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblservicios.Location = new Point(45, 654);
+            lblservicios.Location = new Point(46, 631);
             lblservicios.Name = "lblservicios";
             lblservicios.Size = new Size(114, 23);
             lblservicios.TabIndex = 14;
@@ -186,16 +186,16 @@
             // 
             lbltotal.AutoSize = true;
             lbltotal.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbltotal.Location = new Point(45, 707);
+            lbltotal.Location = new Point(40, 782);
             lbltotal.Name = "lbltotal";
-            lbltotal.Size = new Size(134, 31);
+            lbltotal.Size = new Size(140, 31);
             lbltotal.TabIndex = 15;
-            lbltotal.Text = "TOTAL USD";
+            lbltotal.Text = "TOTAL USD:";
             // 
             // lblresultadocotizacion
             // 
             lblresultadocotizacion.AutoSize = true;
-            lblresultadocotizacion.Location = new Point(347, 411);
+            lblresultadocotizacion.Location = new Point(222, 683);
             lblresultadocotizacion.Name = "lblresultadocotizacion";
             lblresultadocotizacion.Size = new Size(36, 20);
             lblresultadocotizacion.TabIndex = 16;
@@ -204,7 +204,7 @@
             // lblresultadosubtotal
             // 
             lblresultadosubtotal.AutoSize = true;
-            lblresultadosubtotal.Location = new Point(347, 463);
+            lblresultadosubtotal.Location = new Point(222, 484);
             lblresultadosubtotal.Name = "lblresultadosubtotal";
             lblresultadosubtotal.Size = new Size(36, 20);
             lblresultadosubtotal.TabIndex = 17;
@@ -213,7 +213,7 @@
             // lblresultadodescuento
             // 
             lblresultadodescuento.AutoSize = true;
-            lblresultadodescuento.Location = new Point(347, 535);
+            lblresultadodescuento.Location = new Point(222, 537);
             lblresultadodescuento.Name = "lblresultadodescuento";
             lblresultadodescuento.Size = new Size(36, 20);
             lblresultadodescuento.TabIndex = 18;
@@ -222,7 +222,7 @@
             // lblresultadoitbis
             // 
             lblresultadoitbis.AutoSize = true;
-            lblresultadoitbis.Location = new Point(347, 597);
+            lblresultadoitbis.Location = new Point(222, 587);
             lblresultadoitbis.Name = "lblresultadoitbis";
             lblresultadoitbis.Size = new Size(36, 20);
             lblresultadoitbis.TabIndex = 19;
@@ -231,7 +231,7 @@
             // lblresultadoservicio
             // 
             lblresultadoservicio.AutoSize = true;
-            lblresultadoservicio.Location = new Point(347, 654);
+            lblresultadoservicio.Location = new Point(222, 634);
             lblresultadoservicio.Name = "lblresultadoservicio";
             lblresultadoservicio.Size = new Size(36, 20);
             lblresultadoservicio.TabIndex = 20;
@@ -240,20 +240,20 @@
             // lblresultadototal
             // 
             lblresultadototal.AutoSize = true;
-            lblresultadototal.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblresultadototal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblresultadototal.ImageAlign = ContentAlignment.MiddleLeft;
-            lblresultadototal.Location = new Point(347, 707);
+            lblresultadototal.Location = new Point(250, 785);
             lblresultadototal.Name = "lblresultadototal";
-            lblresultadototal.Size = new Size(40, 20);
+            lblresultadototal.Size = new Size(53, 28);
             lblresultadototal.TabIndex = 21;
             lblresultadototal.Text = "0.00";
             // 
             // btncopiar
             // 
             btncopiar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btncopiar.Location = new Point(103, 767);
+            btncopiar.Location = new Point(492, 785);
             btncopiar.Name = "btncopiar";
-            btncopiar.Size = new Size(253, 55);
+            btncopiar.Size = new Size(344, 37);
             btncopiar.TabIndex = 22;
             btncopiar.Text = "Copiar para Whatsapp";
             btncopiar.UseVisualStyleBackColor = true;
@@ -261,19 +261,19 @@
             // 
             // nudNoches
             // 
-            nudNoches.Location = new Point(345, 94);
+            nudNoches.Location = new Point(117, 83);
             nudNoches.Maximum = new decimal(new int[] { 60, 0, 0, 0 });
             nudNoches.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudNoches.Name = "nudNoches";
-            nudNoches.Size = new Size(150, 27);
+            nudNoches.Size = new Size(213, 27);
             nudNoches.TabIndex = 23;
             nudNoches.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // btnimperativo
             // 
-            btnimperativo.Location = new Point(198, 526);
+            btnimperativo.Location = new Point(47, 372);
             btnimperativo.Name = "btnimperativo";
-            btnimperativo.Size = new Size(113, 37);
+            btnimperativo.Size = new Size(94, 40);
             btnimperativo.TabIndex = 24;
             btnimperativo.Text = "Imperativo";
             btnimperativo.UseVisualStyleBackColor = true;
@@ -282,16 +282,16 @@
             // lstresultados
             // 
             lstresultados.FormattingEnabled = true;
-            lstresultados.Location = new Point(526, 138);
+            lstresultados.Location = new Point(492, 34);
             lstresultados.Name = "lstresultados";
-            lstresultados.Size = new Size(297, 664);
+            lstresultados.Size = new Size(344, 744);
             lstresultados.TabIndex = 25;
             // 
             // btnFuncional
             // 
-            btnFuncional.Location = new Point(417, 535);
+            btnFuncional.Location = new Point(310, 372);
             btnFuncional.Name = "btnFuncional";
-            btnFuncional.Size = new Size(94, 29);
+            btnFuncional.Size = new Size(95, 40);
             btnFuncional.TabIndex = 26;
             btnFuncional.Text = "Funcional";
             btnFuncional.UseVisualStyleBackColor = true;
@@ -299,9 +299,9 @@
             // 
             // btnObjetos
             // 
-            btnObjetos.Location = new Point(417, 473);
+            btnObjetos.Location = new Point(177, 372);
             btnObjetos.Name = "btnObjetos";
-            btnObjetos.Size = new Size(94, 29);
+            btnObjetos.Size = new Size(95, 40);
             btnObjetos.TabIndex = 27;
             btnObjetos.Text = "Objetos";
             btnObjetos.UseVisualStyleBackColor = true;

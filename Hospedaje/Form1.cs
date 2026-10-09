@@ -5,6 +5,8 @@ namespace Hospedaje
         public frmcotizador()
         {
             InitializeComponent();
+            this.Text = "Cotizador Villa Coral - Frankeny Castillo - 2025-0791";
+            txttarifanoche.Text = "100";
         }
 
 
@@ -43,7 +45,7 @@ namespace Hospedaje
 
             Reserva reserva = new Reserva(Huesped, noches, tarifa);
 
-            // AQUÍ PONES EL PUNTO DE INTERRUPCIÓN (F9) PARA LA PRUEBA CON EL DOCENTE
+            
             lstresultados.Items.Add($"[Objetos] {reserva.Huesped} : US$ {reserva.Total:N2}");
         }
 
