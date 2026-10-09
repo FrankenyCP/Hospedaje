@@ -5,8 +5,7 @@ namespace Hospedaje
         public frmcotizador()
         {
             InitializeComponent();
-            this.Text = "Cotizador Villa Coral - Frankeny Castillo - 2025-0791";
-            txttarifanoche.Text = "100";
+            
         }
 
 
