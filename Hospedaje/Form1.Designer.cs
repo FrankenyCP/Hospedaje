@@ -256,6 +256,7 @@
             btncopiar.TabIndex = 22;
             btncopiar.Text = "Copiar para Whatsapp";
             btncopiar.UseVisualStyleBackColor = true;
+            btncopiar.Click += btncopiar_Click;
             // 
             // nudNoches
             // 

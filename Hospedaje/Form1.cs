@@ -29,9 +29,9 @@ namespace Hospedaje
             lstresultados.Items.Add($"[Imperativo] {Huesped} : US$ {total:N2}");
         }
 
-        
 
-        
+
+
 
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
@@ -65,6 +65,28 @@ namespace Hospedaje
             decimal total = calcTotal(baseImponible);
 
             lstresultados.Items.Add($"[Funcional] {Huesped} : US$ {total:N2}");
+        }
+
+        private void btncopiar_Click(object sender, EventArgs e)
+        {
+            // 1. Construir el texto con el desglose completo de la cotización
+            string mensajeWhatsapp = $"*Cotización Villa Coral*\n" +
+                                     $"Huésped: {txthuesped.Text}\n" +
+                                     $"Noches: {nudNoches.Value}\n" +
+                                     $"Subtotal: {lblresultadosubtotal.Text}\n" +
+                                     $"Descuento: {lblresultadodescuento.Text}\n" +
+                                     $"ITBIS (18%): {lblresultadoitbis.Text}\n" +
+                                     $"Servicio (10%): {lblresultadoservicio.Text}\n" +
+                                     $"*TOTAL USD: {lblresultadototal.Text}*";
+
+            // 2. Copiar todo el contenido al portapapeles
+            Clipboard.SetText(mensajeWhatsapp);
+
+            // 3. Mostrar el aviso en pantalla
+            MessageBox.Show("cotizacion copiada al portapapeles",
+                            "Copiado",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
         }
     }
 
