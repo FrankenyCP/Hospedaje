@@ -50,8 +50,10 @@
             lblresultadototal = new Label();
             btncopiar = new Button();
             nudNoches = new NumericUpDown();
-            btnimperactivo = new Button();
+            btnimperativo = new Button();
             lstresultados = new ListBox();
+            btnFuncional = new Button();
+            btnObjetos = new Button();
             ((System.ComponentModel.ISupportInitialize)nudNoches).BeginInit();
             SuspendLayout();
             // 
@@ -265,15 +267,15 @@
             nudNoches.TabIndex = 23;
             nudNoches.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
-            // btnimperactivo
+            // btnimperativo
             // 
-            btnimperactivo.Location = new Point(198, 526);
-            btnimperactivo.Name = "btnimperactivo";
-            btnimperactivo.Size = new Size(113, 37);
-            btnimperactivo.TabIndex = 24;
-            btnimperactivo.Text = "Imperactivo";
-            btnimperactivo.UseVisualStyleBackColor = true;
-            btnimperactivo.Click += btnimperactivo_Click;
+            btnimperativo.Location = new Point(198, 526);
+            btnimperativo.Name = "btnimperativo";
+            btnimperativo.Size = new Size(113, 37);
+            btnimperativo.TabIndex = 24;
+            btnimperativo.Text = "Imperativo";
+            btnimperativo.UseVisualStyleBackColor = true;
+            btnimperativo.Click += btnimperactivo_Click;
             // 
             // lstresultados
             // 
@@ -283,13 +285,35 @@
             lstresultados.Size = new Size(297, 664);
             lstresultados.TabIndex = 25;
             // 
+            // btnFuncional
+            // 
+            btnFuncional.Location = new Point(417, 535);
+            btnFuncional.Name = "btnFuncional";
+            btnFuncional.Size = new Size(94, 29);
+            btnFuncional.TabIndex = 26;
+            btnFuncional.Text = "Funcional";
+            btnFuncional.UseVisualStyleBackColor = true;
+            btnFuncional.Click += btnFuncional_Click_1;
+            // 
+            // btnObjetos
+            // 
+            btnObjetos.Location = new Point(417, 473);
+            btnObjetos.Name = "btnObjetos";
+            btnObjetos.Size = new Size(94, 29);
+            btnObjetos.TabIndex = 27;
+            btnObjetos.Text = "Objetos";
+            btnObjetos.UseVisualStyleBackColor = true;
+            btnObjetos.Click += btnObjetos_Click_1;
+            // 
             // frmcotizador
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(848, 834);
+            Controls.Add(btnObjetos);
+            Controls.Add(btnFuncional);
             Controls.Add(lstresultados);
-            Controls.Add(btnimperactivo);
+            Controls.Add(btnimperativo);
             Controls.Add(nudNoches);
             Controls.Add(btncopiar);
             Controls.Add(lblresultadototal);
@@ -313,7 +337,7 @@
             Controls.Add(lblnoches);
             Controls.Add(lblhuesped);
             Name = "frmcotizador";
-            Text = "Cotizador Villa Coral";
+            Text = "Cotizador Villa Coral - Frankeny Castillo - 2025-0794";
             ((System.ComponentModel.ISupportInitialize)nudNoches).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -343,7 +367,9 @@
         private Label lblresultadototal;
         private Button btncopiar;
         private NumericUpDown nudNoches;
-        private Button btnimperactivo;
+        private Button btnimperativo;
         private ListBox lstresultados;
+        private Button btnFuncional;
+        private Button btnObjetos;
     }
 }
